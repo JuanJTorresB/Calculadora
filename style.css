@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+    "output"
+    "section3"
+    "section2"
+    "section1"
+    "section0";
+}
+
+.container__output {
+    background-color: rgb(96, 106, 126);
+    margin: auto;
+    grid-area: output;
+    width: 95%;
+    border-radius: 25px;
+    min-height: 100px;
+    max-height: 20vw;
+}
+
+.container__section {
+    min-height: 100px;
+    min-width: 400px;
+    max-width: 500px;
+    display: grid;
+    padding: 5px;
+    gap: 5px;
+    grid-template-areas:
+    "b1 b2 b3 b4";
+}
+
+.button--1 {
+    grid-area:b1;
+}
+
+.button--2 {
+    grid-area:b2;
+}
+
+.button--3 {
+    grid-area:b3;
+}
+
+.button--4 {
+    grid-area:b4;
+}
+
+.section--0 {
+    grid-area: section0;
+}
+
+.section--1 {
+    grid-area: section1;
+}
+
+.section--2 {
+    grid-area: section2;
+}
+
+.section--3 {
+    grid-area: section3;
+}
+
+.container__button{
+    border-radius: 25px;
+    background-color: rgb(255, 175, 109);
+    border: 0px;
+}
