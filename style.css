@@ -23,6 +23,12 @@ body{
 }
 
 .container__output {
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
     background-color: rgb(96, 106, 126);
     margin: auto;
     grid-area: output;
