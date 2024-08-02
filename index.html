@@ -9,30 +9,30 @@
 </head>
 <body>
     <main class="container">
-        <output class="container__output"></output>
+        <output class="container__output" id="output__calculadora"></output>
         <section class="container__section section--3">
-            <button class="container__button button--1">7</button>
-            <button class="container__button button--2">8</button>
-            <button class="container__button button--3">9</button>
-            <button class="container__button button--4">÷</button>
+            <button onclick="numeroBotón('7')" class="container__button button--1">7</button>
+            <button onclick="numeroBotón('8')" class="container__button button--2">8</button>
+            <button onclick="numeroBotón('9')" class="container__button button--3">9</button>
+            <button onclick="hacerOperación('/')" class="container__button button--4">÷</button>
         </section>
         <section class="container__section section--2">
-            <button class="container__button button--1">4</button>
-            <button class="container__button button--2">5</button>
-            <button class="container__button button--3">6</button>
-            <button class="container__button button--4">x</button>
+            <button onclick="numeroBotón('4')" class="container__button button--1">4</button>
+            <button onclick="numeroBotón('5')" class="container__button button--2">5</button>
+            <button onclick="numeroBotón('6')" class="container__button button--3">6</button>
+            <button onclick="hacerOperación('*')" class="container__button button--4">x</button>
         </section>
         <section class="container__section section--1">
-            <button class="container__button button--1">1</button>
-            <button class="container__button button--2">2</button>
-            <button class="container__button button--3">3</button>
-            <button class="container__button button--4">-</button>
+            <button onclick="numeroBotón('1')" class="container__button button--1">1</button>
+            <button onclick="numeroBotón('2')" class="container__button button--2">2</button>
+            <button onclick="numeroBotón('3')" class="container__button button--3">3</button>
+            <button onclick="hacerOperación('-')" class="container__button button--4">-</button>
         </section>  
         <section class="container__section section--0">
-            <button class="container__button button--1">0</button>
-            <button class="container__button button--2">=</button>
-            <button class="container__button button--3">C</button>
-            <button class="container__button button--4">+</button>
+            <button onclick="numeroBotón('0')" class="container__button button--1">0</button>
+            <button onclick="resultado()" class="container__button button--2">=</button>
+            <button onclick="limpiarOutput()" class="container__button button--3">C</button>
+            <button onclick="hacerOperación('+')"class="container__button button--4">+</button>
         </section>
     </main>
 </body>
